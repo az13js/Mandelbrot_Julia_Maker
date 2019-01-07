@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mandelbrot &amp; Julia</title>
+  </head>
+  <body>
+    <!-- 标题 -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <h1>Mandelbrot</h1>
+        </div>
+      </div>
+    </div>
+    <!-- 图形显示 -->
+    <div class="container">
+      <div class="row">
+        <div id="display" class="col-sm-12 text-center">
+        </div>
+      </div>
+    </div>
+    <!-- 集合类型设置 -->
+    <!--<div class="container">
+      <div class="row">
+        <div class="col-sm-2 text-center">
+          <h4>集合类型</h4>
+        </div>
+        <div class="col-sm-2 text-center">
+          <select id="type" class="form-control">
+            <option value="Mandelbrot">Mandelbrot</option>
+            <option value="Julia">Julia</option>
+          </select>
+        </div>
+        <div class="col-sm-2 text-center">
+          <h4>Julia集合参数C</h4>
+        </div>
+        <div class="col-sm-1 text-center">
+          <h4>实部</h4>
+        </div>
+        <div class="col-sm-2 text-center">
+          <input id="juliareal" type="text" class="form-control" placeholder="0" value="0">
+        </div>
+        <div class="col-sm-1 text-center">
+          <h4>虚部</h4>
+        </div>
+        <div class="col-sm-2 text-center">
+          <input id="juliaimag" type="text" class="form-control" placeholder="0" value="0">
+        </div>
+      </div>
+  </div>-->
+    <!-- 屏幕显示范围参数 -->
+    <!--<div class="container">
+      <div class="row">
+        <div class="col-sm-2 text-center"><h4>中心实部</h4></div>
+        <div class="col-sm-2 text-center"><input id="centerreal" type="text" class="form-control" placeholder="0" value="0"/></div>
+        <div class="col-sm-2 text-center"><h4>中心虚部</h4></div>
+        <div class="col-sm-2 text-center"><input id="centerimag" type="text" class="form-control" placeholder="0" value="0"/></div>
+        <div class="col-sm-2 text-center"><h4>视野范围</h4></div>
+        <div class="col-sm-2 text-center"><input id="width" type="text" class="form-control" placeholder="0" value="20"/></div>
+      </div>
+  </div>-->
+    <!-- 应用修改和保存图片 -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2">
+          <button id="save" type="button" class="btn btn-danger">导出图片</button>
+        </div>
+        <div class="col-sm-2">
+          <button id="select" data-mod="normal" type="button" class="btn btn-primary">进入选择模式</button>
+        </div>
+        <div class="col-sm-2 text-center">
+          <h4>图形着色方法</h4>
+        </div>
+        <div class="col-sm-2 text-center">
+          <select id="mandelbortcolor" class="form-control">
+            <option value="default">默认</option>
+            <option value="transposition">伪彩色</option>
+            <option value="bluewhite">黑蓝白</option>
+            <option value="rainbow">彩虹</option>
+            <option value="rainbow2">彩虹反向</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <h1>Julia</h1>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div id="displayjulia" class="col-sm-12 text-center">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2">
+          <button id="savejulia" type="button" class="btn btn-danger">导出图片</button>
+        </div>
+        <div class="col-sm-2 text-center">
+          <h4>图形着色方法</h4>
+        </div>
+        <div class="col-sm-2 text-center">
+          <select id="juliacolor" class="form-control">
+            <option value="default">默认</option>
+            <option value="transposition">伪彩色</option>
+            <option value="bluewhite">黑蓝白</option>
+            <option value="rainbow">彩虹</option>
+            <option value="rainbow2">彩虹反向</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  <script type="text/javascript" src="./index.9a7533b36f9e16fb5cfc.js"></script></body>
+</html>
